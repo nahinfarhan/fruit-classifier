@@ -1,0 +1,8 @@
+services:
+  fruit-classifier:
+    build: .
+    ports:
+      - "5001:5000"
+      - "8502:8501"
+    environment:
+      - PYTHONUNBUFFERED=1
