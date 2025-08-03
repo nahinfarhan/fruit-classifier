@@ -24,3 +24,9 @@ coverage.xml
 *.egg-info/
 dist/
 build/
+
+# Model files (too large for GitHub)
+*.keras
+*.h5
+*.pkl
+*.joblib

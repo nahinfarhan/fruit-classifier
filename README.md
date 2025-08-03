@@ -52,3 +52,8 @@ curl -X POST -F "file=@your_image.jpg" http://localhost:5000/predict
 - Input: 224x224 RGB images
 - Output: Fruit class probabilities + freshness probability
 - Format: `.keras` model file named `multi_task_resnet152.keras`
+
+**Note**: The trained model file (`multi_task_resnet152.keras`) is not included in this repository due to GitHub's file size limits. You need to:
+1. Train your own model using the architecture described
+2. Place the trained model file in the project root
+3. Ensure it's named `multi_task_resnet152.keras`
