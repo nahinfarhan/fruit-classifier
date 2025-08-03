@@ -7,6 +7,7 @@ A web application for classifying fruit types and freshness using a pre-trained 
 - **Fruit Classification**: Identifies fruit types (apple, banana, orange, etc.)
 - **Freshness Detection**: Determines if fruit is fresh or rotten
 - **Web Interface**: User-friendly Streamlit UI
+- **Live Camera Feed**: Real-time classification using webcam
 - **REST API**: Flask backend for programmatic access
 - **Docker Support**: Containerized deployment
 
@@ -57,3 +58,9 @@ curl -X POST -F "file=@your_image.jpg" http://localhost:5000/predict
 1. Train your own model using the architecture described
 2. Place the trained model file in the project root
 3. Ensure it's named `multi_task_resnet152.keras`
+
+## Camera Requirements
+
+- Working webcam/camera device
+- Camera permissions enabled for the browser/application
+- Good lighting for optimal fruit detection

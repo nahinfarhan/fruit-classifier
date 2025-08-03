@@ -4,3 +4,4 @@ streamlit
 pillow
 numpy
 requests
+opencv-python
