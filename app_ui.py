@@ -31,7 +31,7 @@ if mode == "📁 Upload Image":
                     files = {'file': uploaded_file}
                     
                     # Call Flask API
-                    response = requests.post('http://localhost:5000/predict', files=files)
+                    response = requests.post('http://localhost:5001/predict', files=files)
                     
                     if response.status_code == 200:
                         result = response.json()
@@ -114,7 +114,7 @@ else:  # Live Camera Feed mode
                     try:
                         # Send to API
                         files = {'file': img_bytes}
-                        response = requests.post('http://localhost:5000/predict', files=files, timeout=1)
+                        response = requests.post('http://localhost:5001/predict', files=files, timeout=1)
                         
                         if response.status_code == 200:
                             result = response.json()

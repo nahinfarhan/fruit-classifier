@@ -4,5 +4,11 @@ services:
     ports:
       - "5001:5000"
       - "8502:8501"
+    devices:
+      - "/dev/video0:/dev/video0"
+    volumes:
+      - "/tmp/.X11-unix:/tmp/.X11-unix:rw"
     environment:
       - PYTHONUNBUFFERED=1
+      - DISPLAY=${DISPLAY}
+    privileged: true
